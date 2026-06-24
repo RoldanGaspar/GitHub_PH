@@ -48,3 +48,70 @@ next-env.d.ts
 
 # contentlayer
 .contentlayer
+
+# --- GitHubPH Specific ---
+
+# Sentry (error monitoring)
+.sentryclirc
+*.map
+sentry.properties
+.next/sentry/
+.sentry/
+
+# PostHog (analytics)
+posthog.json
+.posthog/
+
+# AWS (future S3/CDN)
+.aws-credentials
+*.tfstate
+*.tfstate.backup
+.terraform/
+
+# Environment files (all stages, local & non-local)
+.env
+.env.development
+.env.production
+.env.test
+.env.staging
+
+# VSCode workspace settings (keep consistent via sharing, but ignore user-specific)
+.vscode/settings.json
+.vscode/*.log
+
+# macOS Finder attributes
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+.DocumentRevisions-V100
+.fseventsd
+.Spotlight-V100
+.TemporaryItems
+.Trashes
+.VolumeIcon.icns
+.com.apple.timemachine.donotpresent
+
+# Windows
+Thumbs.db
+Thumbs.db:encryptable
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# Linux
+*~
+.directory
+
+# Temporary/backup files
+*.bak
+*.tmp
+*.temp
+*.swp
+*.swo
+*~
+\#*\#
+.\#*
+
+# Git merge conflict artifacts
+*.orig
